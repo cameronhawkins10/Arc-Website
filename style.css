@@ -533,3 +533,17 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.logo {
+    height: 80px;
+    /* Default size for larger screens */
+    width: auto;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+        /* Smaller size for mobile devices */
+    }
+}
