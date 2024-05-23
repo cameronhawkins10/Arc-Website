@@ -39,6 +39,15 @@
 <body>
     <div class="container-xxl bg-white p-0">
 
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
             <a href="index.html" class="navbar-brand">
@@ -62,7 +71,7 @@
         <div class="container-fluid p-0 mb-5">
             <div class="owl-carousel header-carousel position-relative">
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/blank-image.webp" alt="">
+                    <img class="img-fluid" src="img/carousel-image1.png" alt="">
                     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
                         style="background: rgba(0, 0, 0, .2);">
                         <div class="container">
@@ -72,6 +81,34 @@
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">where we bridge the gap between faith
                                         and education. Join us on a journey of academic success and spiritual growth.
                                     </p>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn
+                                        More</a>
+                                    <a href=""
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-image1.png" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Welcome to Arc...</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">where we bridge the gap between faith
+                                        and education. Join us on a journey of academic success and spiritual growth.
+                                    </p>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn
+                                        More</a>
+                                    <a href=""
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
                                 </div>
                             </div>
                         </div>
@@ -101,8 +138,7 @@
                     <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/blank-image.webp"
-                                    alt="">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/filler.png" alt="">
                             </div>
                             <!-- Removed Smaller Photos -->
                         </div>
@@ -112,14 +148,14 @@
         </div>
         <!-- About End -->
 
-        <!-- Call To Action Start -->
+        <!-- Vision Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/blank-image.webp"
+                                <img class="position-absolute w-100 h-100 rounded" src="img/filler.png"
                                     style="object-fit: cover;">
                             </div>
                         </div>
@@ -143,7 +179,7 @@
         </div>
 
 
-        <!-- Call To Action Start -->
+        <!-- Mission Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="bg-light rounded">
@@ -162,7 +198,7 @@
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/blank-image.webp"
+                                <img class="position-absolute w-100 h-100 rounded" src="img/filler.png"
                                     style="object-fit: cover;">
                             </div>
                         </div>
@@ -172,21 +208,19 @@
         </div>
         <!-- Call To Action End -->
 
-        <!-- Facilities Start -->
+        <!-- Beliefs Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Our Beliefs</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                        eirmod
-                        sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-primary"
+                            <div class="facility-icon bg-primary" id="belief-top"
                                 style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
+
                             </div>
                             <div class="facility-text bg-primary" style="padding: 20px;">
                                 <h3 class="text-primary mb-3">School Bus</h3>
@@ -196,9 +230,9 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-success"
+                            <div class="facility-icon bg-success" id="belief-top"
                                 style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fa fa-futbol fa-3x text-success"></i>
+
                             </div>
                             <div class="facility-text bg-success" style="padding: 20px;">
                                 <h3 class="text-success mb-3">Playground</h3>
@@ -208,9 +242,9 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-warning"
+                            <div class="facility-icon bg-warning" id="belief-top"
                                 style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fa fa-home fa-3x text-warning"></i>
+
                             </div>
                             <div class="facility-text bg-warning" style="padding: 20px;">
                                 <h3 class="text-warning mb-3">Healthy Canteen</h3>
@@ -220,9 +254,9 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="facility-item">
-                            <div class="facility-icon bg-info"
+                            <div class="facility-icon bg-info" id="belief-top"
                                 style="width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+
                             </div>
                             <div class="facility-text bg-info" style="padding: 20px;">
                                 <h3 class="text-info mb-3">Positive Learning</h3>
@@ -233,7 +267,7 @@
                 </div>
             </div>
         </div>
-        <!-- Facilities End -->
+        <!-- Beliefs End -->
 
         <!-- Footer Start -->
 
@@ -264,28 +298,28 @@
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                             <div class="col-4 col-md-3">
-                                <img class="img-fluid rounded bg-light p-1" src="img/blank-image.webp" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="img/filler.png" alt="">
                             </div>
                         </div>
                     </div>
